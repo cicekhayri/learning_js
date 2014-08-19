@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    
+  <script>
+    
+    var global_var = "Hayri"; // this is global variable
+    
+    function func_name() { 
+      var girl_name = "Johanna"; // local variable
+      document.write(girl_name);
+      document.write("<br/>" + " calling global_var from the function " + global_var); //
+    }
+    
+    func_name(); // calling the function
+    
+    document.write("<br/> " + global_var); // calling the global variable
+
+    document.write("this will not get printed" + girl_name); // this will not be printed calling local_variable
+    
+    
+  </script> 
+
+  
+  </body>
+</html>
