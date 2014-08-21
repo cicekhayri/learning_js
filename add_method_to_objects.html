@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      
+      function people(name, age) {
+        this.name = name;
+        this.age = age;
+        this.retire = yearsLeftRetire;
+      }
+      
+      function yearsLeftRetire() {
+        var retire = 65 - this.age;
+        return retire;
+      }
+      
+      var hayri = new people("Hayri Cicek", 31);
+      var ruby = new people("Ruby" , 20);
+      
+    </script>
+  </head>
+  <body>
+    
+    <script>
+      
+      document.write(hayri.retire());
+      document.write("<br/>" + ruby.retire());
+      
+    
+    </script>
+    
+    
+    
+  </body>
+</html>
